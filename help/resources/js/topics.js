@@ -1,7 +1,7 @@
 var faq = [{
   title: "Notification Help",
   items: [{
-    keywords: "notification information",
+    keywords: "notifications information",
     title: "How do notifications work in Talon?",
     text: "If you are looking for push notifications, please read the topic on Push Notifications, at the bottom, instead." + brbr() +
           "To receive notifications based on your <i>Notification Settings</i> section of the app, you need to enable background refreshes for the timelines that you want to get notified for (under Sync Settings)." + brbr() +
@@ -165,7 +165,11 @@ var faq = [{
   }, {
     keywords: "like retweet quote statistics information",
     title: "How can I see who has liked, retweeted, and quoted my status?",
-    text: ""
+    text: "If you open any tweet, you will see the counts for the number of likes and retweets. Tapping those counts will give you the people that performed those actions."
+  }, {
+    keywords: "followers friends following profile",
+    title: "How can I see who is following me and who I am following?",
+    text: "You can open your own profile by touching your profile picture in the app's navigation drawer header. From there, tapping the counts for the number of followers or the people you are following will open up the list of the respective users."
   }]
 }, {
   title: "Twitter Limitations",
@@ -176,42 +180,87 @@ var faq = [{
   }, {
     keywords: "profile-pictures loading empty blank",
     title: "Some profile pictures don't show in Talon?",
-    text: ""
+    text: "It seems like Twitter has recently made some changes. They aren't giving us a profile image of the right size. @ManMadeMoon is an example of this, that I am going to analyze here." + brbr() +
+          "This should be the <i>original size</i> image (http://pbs.twimg.com/profile_images/1344744333/duncan8bit.jpg) but it is blank. They do provide a smaller sized images (http://pbs.twimg.com/profile_images/1344744333/duncan8bit_bigger.jpg), but unfortunately I have not found a way to know if the normal one is blank or not, and the smaller image is too small to use on many parts of talon." + brbr() +
+          "The biggest issue here is that a changing to use the smaller image isn't a change that could be made on a per-user basis, it would be all or nothing, across the whole app, for every user, which is not possible, at this time." + brbr() +
+          "I will continue investigating this, but it seems like the change has been made on Twitter's side." + brbr() +
+          "You can see it also, if you just go to this profile, on your computer, and try to open the full screen profile image. It is blank on Twitter's website as well: https://twitter.com/ManMadeMoon"
   }, {
     keywords: "threads conversations replies loading reply",
     title: "How conversations/threads are loaded and why they don't always show everything.",
-    text: ""
+    text: "This is something that Twitter has limited us with. To grab the replies/thread (or <i>Tweetstorms</i>) on a tweet, all we can do is a generic Twitter search, then comb through the results. This is slow and very inefficient, but Twitter doesn't provide any APIs for grabbing replies. This is also why tweets by popular profiles do not show all the replies. They simply have too many to search and filter effectively. You will see this issue with any third party app." + brbr() +
+          "While this method works (for the most part), it means that to get replies to a reply, we would have to go through the whole search process over again, taking more time and just generally annoying the user." + brbr() +
+          "This is not a viable option at this time. Even if searching was faster, the user would still get hit hard with rate limiting, which you can learn about, on this help page." + brbr() +
+          "All-in-all, this post was too long and confusing, but that is exactly like finding replies on Twitter: they are long and confusing, with multiple levels and searches. Unless Twitter changes their third party services, this is not something that will be able to come to Talon." + brbr() +
+          "If you really want to see a tweet thread, I recommend hitting the <i>View on Web</i> button that is in the tweet viewer's three dot overflow menu.﻿"
   }, {
     keywords: "activity notifications",
     title: "How does the activity page work?",
-    text: ""
-  }, {
-    keywords: "login log-in information",
-    title: "Login Issues",
-    text: ""
+    text: "<b>What is it?</b>" + br() +
+          "The activity page is used for tracking your interactions on Twitter. It will display information such as new followers, mentions, quotes (RT with a comment) of your tweets, and likes/retweets on your tweets." + brbr() +
+
+          "<b>How does it work?</b>" + br() +
+          "This page is simple and works very similar to the other pages on your timeline. It is a manual refresh (or background refresh - if you prefer). When it updates, it will display the information it has downloaded." + brbr() +
+
+          "<b>What it isn't</b>" + br() +
+          "This is not Talon Pull. It will not provide you with instant notifications for your interactions and it does not replace Talon Pull in that regard. This page has nothing to do with <i>streaming</i> which is the method that Talon Pull uses to catch those interactions." + brbr() +
+
+          "Why should you use it?" + br() +
+          "If you use Talon Pull and are happy with how that works, then there is really no reason to use this page. They are alternatives to each other. This, in no way, replaces Talon Pull. The activity page should be used if you are interested in this interaction information but you do not care about getting up-to-the-second notifications." + brbr() +
+          "There are of course advantages to this page over Talon Pull's streaming method as well. The foremost being battery and data saving." + brbr() +
+          "So pick the method you want and works best for you. On Lollipop, the battery effects of Talon Pull are unbearable, whereas they aren't nearly as severe on KitKat and below.﻿" + brbr() +
+
+          "<b>What if it isn't working?</b>" + br() +
+          "Some of what goes into the activity page depends on pieces outside if Twitter's API. I know some people have issues with it, unfortunately I don't think they will be fixed until Twitter opens things up more. The main issues will come for user's with protected accounts, or users that produce a high volume of tweets."
   }, {
     keywords: "second-account two-account two account limit token",
     title: "Why is Talon limited to two accounts?",
-    text: ""
+    text: "Twitter limits the number of users that a third party app can authenticate. Until they lift this restriction, Talon will have to keep it's two account limit."
   }, {
     keywords: "rate-limiting loading spinning",
     title: "What is rate limiting and why does it stop some parts of the app from loading?",
-    text: ""
+    text: "To control the traffic that goes through their 3rd party API, Twitter uses a technique called <i>Rate Limiting</i>." + brbr() +
+          "What this basically means is that certain actions in Talon are limited to so many calls within a time limit. The most common limit you will run into is probably with refreshing your home timeline." + brbr() +
+          "For example, with the home timeline, you only get 15 refreshes in a 15 minute interval. So if you try to make a 16th pull to refresh in Talon within a 15 minute window, you will get blocked by Twitter until that 15 minutes is up." + brbr() +
+          "There is no way around this on my side, but on your home timeline, starting with version 3.2.0, you will be alerted to when that limit has been reached and it will tell you <i>Rate Limit Reached</i> on the toast instead of just <i>No New Tweets</i>." + brbr() +
+          "Hopefully this goes to alleviate some confusion on the limitations of a 3rd party client and why sometimes you cannot refresh your feed." + brbr() +
+          "For more info, feel free to check out this link: https://dev.twitter.com/rest/public/rate-limiting" + brbr() +
+          "OR, this one for the actually limits and what parts of the API are limited: https://dev.twitter.com/rest/public/rate-limits"
   }]
 }, {
   title: "More Help",
   items: [{
     keywords: "battery data limit consumption",
     title: "Battery/Data consumption",
-    text: ""
+    text: "If you use Talon a lot throughout the day, it is going to take up battery and mobile data, simple as that. I find that on a 30 min refresh interval for the different timelines and manually going in and browsing/updating throughout the day, it takes about 4-5% of my battery." + brbr() +
+          "If that isn't acceptable for you though, then there are a few things you can do to reduce battery consumption:" +
+          "<ol>" +
+            "<li>Turn off <i>Talon Pull</i> and <i>Live Streaming</i></li>" +
+            "<li>Don't use the <i>Pre-cache Images</i> option under <i>Sync Settings</i></li>" +
+            "<li>Turn down the refresh interval on the timelines. This is the big one. It is those background services that are going to drain your battery, because they are going to cause <i>Wake Locks</i>.</li>" +
+            "<li>Turn off <i>Refresh on Startup</i></li>" +
+            "<li>Don't have it sync the second account's mentions</li>" +
+          "</ol>" +
+          "Basically, if things are working in the background, it is going to take up both your data allowance, and your battery. Reduce it whenever possible and you will be better off in these regards."
   }, {
     keywords: "translation translate language",
     title: "Can I help translate Talon?",
-    text: ""
+    text: "If anyone is interested, the translations for Talon are all open to contributors. To translate, we have been using OneSky." + brbr() +
+          "You will notice two different projects for Talon on the site. One of them is the original/classic version's strings. The other is the strings for the newer material design version of the app. Since I am still managing and supporting both versions, it made sense for me to make separate projects." + brbr() +
+          "No strings are duplicated. If you translate the string in the classic version, it will still be brought into the new version as well." + brbr() +
+          "So, here is the link to the original, <i>Classic</i> version's strings: " + link("link", "http://oshynev.oneskyapp.com/admin/project/dashboard/project/7755") + brbr() +
+          "and here is a link to the new strings that were added in the Lollipop version: " + link("link", "http://oshynev.oneskyapp.com/admin/project/dashboard/project/15080") + brbr() +
+          "If anyone wants to help out, that would be great, thanks and enjoy the app!"
   }, {
     keywords: "contact email feature-request bug-report",
     title: "How can I get in touch with you?",
-    text: ""
+    text: "I am active pretty much anywhere you can find me. Email is usually your best bet, but here are a list of possible places:" + br() +
+          "<ul>" +
+            "<li><a href=\"mailto:luke@klinkerapps.com?Subject=Pulse\">Email</a></li>" +
+            "<li><a href=\"https://twitter.com/KlinkerApps\" target=\"_blank\">Twitter</a></li>" +
+            "<li><a href=\"https://twitter.com/lukeklinker\" target=\"_blank\">Luke's Twitter</a></li>" +
+            "<li><a href=\"https://plus.google.com/communities/112468199526946242218\" target=\"_blank\">Google+ Community</a></li>" +
+          "</ul>"
   }]
 }]
 
