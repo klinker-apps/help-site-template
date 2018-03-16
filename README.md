@@ -1,6 +1,6 @@
 ![preview](preview-image.png)
 
-# Talon Help
+# Talon for Twitter
 
 This is a fork of my [help-site-template](https://github.com/klinker24/help-site-template). It serves two purposes for [Talon](https://play.google.com/store/apps/details?id=com.klinker.android.twitter_l):
 
