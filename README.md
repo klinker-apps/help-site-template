@@ -2,7 +2,11 @@
 
 # Talon Help
 
-This is a fork of my [help-site-template](https://github.com/klinker24/help-site-template). It will host the help topics for [Talon for Twitter](https://play.google.com/store/apps/details?id=com.klinker.android.twitter_l).
+This is a fork of my [help-site-template](https://github.com/klinker24/help-site-template). It serves two purposes for [Talon](https://play.google.com/store/apps/details?id=com.klinker.android.twitter_l):
+
+1. It will host the help topics for the app. This includes feature descriptions, common questions, limitations, and anything else that people reach out to me about.
+2. It will host the overview page for the app. This will just be a static page that displays some features, has some screenshots, and links to some information.
+3. It will host the privacy policy for the app.
 
 To learn more about creating your own help page, based on my template, please see the [help-site-template](https://github.com/klinker24/help-site-template) repository.
 
