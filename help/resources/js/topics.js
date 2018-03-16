@@ -181,10 +181,10 @@ var faq = [{
     keywords: "profile-pictures loading empty blank",
     title: "Some profile pictures don't show in Talon?",
     text: "It seems like Twitter has recently made some changes. They aren't giving us a profile image of the right size. @ManMadeMoon is an example of this, that I am going to analyze here." + brbr() +
-          "This should be the <i>original size</i> image (http://pbs.twimg.com/profile_images/1344744333/duncan8bit.jpg) but it is blank. They do provide a smaller sized images (http://pbs.twimg.com/profile_images/1344744333/duncan8bit_bigger.jpg), but unfortunately I have not found a way to know if the normal one is blank or not, and the smaller image is too small to use on many parts of talon." + brbr() +
+          "This should be the <i>original size</i> image (" + link("http://pbs.twimg.com/profile_images/1344744333/duncan8bit.jpg", "http://pbs.twimg.com/profile_images/1344744333/duncan8bit.jpg") + ") but it is blank. They do provide a smaller sized images (" + link("http://pbs.twimg.com/profile_images/1344744333/duncan8bit_bigger.jpg", "http://pbs.twimg.com/profile_images/1344744333/duncan8bit_bigger.jpg") + "), but unfortunately I have not found a way to know if the normal one is blank or not, and the smaller image is too small to use on many parts of talon." + brbr() +
           "The biggest issue here is that a changing to use the smaller image isn't a change that could be made on a per-user basis, it would be all or nothing, across the whole app, for every user, which is not possible, at this time." + brbr() +
           "I will continue investigating this, but it seems like the change has been made on Twitter's side." + brbr() +
-          "You can see it also, if you just go to this profile, on your computer, and try to open the full screen profile image. It is blank on Twitter's website as well: https://twitter.com/ManMadeMoon"
+          "You can see it also, if you just go to this profile, on your computer, and try to open the full screen profile image. It is blank on Twitter's website as well: " + link("https://twitter.com/ManMadeMoon", "https://twitter.com/ManMadeMoon")
   }, {
     keywords: "threads conversations replies loading reply",
     title: "How conversations/threads are loaded and why they don't always show everything.",
@@ -224,8 +224,8 @@ var faq = [{
           "For example, with the home timeline, you only get 15 refreshes in a 15 minute interval. So if you try to make a 16th pull to refresh in Talon within a 15 minute window, you will get blocked by Twitter until that 15 minutes is up." + brbr() +
           "There is no way around this on my side, but on your home timeline, starting with version 3.2.0, you will be alerted to when that limit has been reached and it will tell you <i>Rate Limit Reached</i> on the toast instead of just <i>No New Tweets</i>." + brbr() +
           "Hopefully this goes to alleviate some confusion on the limitations of a 3rd party client and why sometimes you cannot refresh your feed." + brbr() +
-          "For more info, feel free to check out this link: https://dev.twitter.com/rest/public/rate-limiting" + brbr() +
-          "OR, this one for the actually limits and what parts of the API are limited: https://dev.twitter.com/rest/public/rate-limits"
+          "For more info, feel free to check out this link: " + link("https://dev.twitter.com/rest/public/rate-limiting", "https://dev.twitter.com/rest/public/rate-limiting") + brbr() +
+          "OR, this one for the actually limits and what parts of the API are limited: " + link("https://dev.twitter.com/rest/public/rate-limits", "https://dev.twitter.com/rest/public/rate-limits")
   }]
 }, {
   title: "More Help",
