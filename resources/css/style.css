@@ -116,7 +116,7 @@ h1,h2,h3,h4,h5,h6 {
 #logo a {
   -webkit-transition: width .3s ease-in;
   transition: width .3s ease-in;
-  width: 92px;
+  width: 195px;
   height: 24px;
   text-indent: -1000px;
   overflow: hidden;
