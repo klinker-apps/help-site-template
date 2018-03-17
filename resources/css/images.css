@@ -1,0 +1,223 @@
+/* Hero Images */
+.overview .section-banner {
+  background-image: url(../images/banners/overview-header.png);
+}
+
+.section--bg-generic-media {
+  background: transparent url(../images/banners/overview-media.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.section--bg-generic-design {
+  background: transparent url(../images/banners/overview-design.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.section--bg-generic-access-anywhere {
+  background: transparent url(../images/banners/overview-anywhere.jpg) center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .section--generic.section--generic-mobile.section--bg-generic-media>.inner::after {
+    background: transparent url(../images/banners/overview-media-centered.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .section--generic.section--generic-mobile.section--bg-generic-access-anywhere>.inner::after {
+    background: transparent url(../images/banners/overview-anywhere-centered.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .section--generic.section--generic-mobile.section--bg-generic-design>.inner::after {
+    background: transparent url(../images/banners/overview-design-centered.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+/* Social Media Images */
+.section-footer-social-media__icon:before {
+  background-image: url(../images/social.svg);
+  background-repeat: no-repeat;
+}
+
+.section-footer-social-media__channel--googleplus .section-footer-social-media__icon:before {
+  background-position: 0 0;
+  height: 20px;
+  width: 32px;
+}
+
+.section-footer-social-media__channel--twitter .section-footer-social-media__icon:before {
+  background-position: 0 -20px;
+  height: 20px;
+  width: 25px;
+}
+
+.section-footer-social-media__channel--youtube .section-footer-social-media__icon:before {
+  background-position: -32px 0;
+  height: 20px;
+  width: 29px;
+}
+
+
+
+/* Generic Section Images */
+.svgicon:before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.svgicon.icon-play-white:before {
+  background-image: url(../images/video.svg);
+  background-size: 3.5em 4em;
+  width: 3.6em;
+  height: 3.6em;
+}
+
+.svgicon.icon-reasons-media:before {
+  background-image: url(../images/media.svg);
+  background-size: 7.5em 8.1em;
+  width: 7.5em;
+  height: 8.1em;
+}
+
+.svgicon.icon-reasons-design:before {
+  background-image: url(../images/fire.svg);
+  background-size: 7.2em 7.8em;
+  width: 7.2em;
+  height: 7.8em;
+}
+
+.svgicon.icon-reasons-everywhere:before {
+  background-image: url(../images/cloud.svg);
+  background-size: 11em 8.2em;
+  width: 11em;
+  height: 8.2em;
+}
+
+
+
+/* Features Grid Images */
+.svgicon.icon-features-devices:before {
+  background-image: url(../images/bubble-chart.svg);
+  background-size: 4.2em 4.2em;
+  background-position: 0em 0em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.svgicon.icon-features-customization:before {
+  background-image: url(../images/per-contact.svg);
+  background-size: 3.8em 3.8em;
+  background-position: 0em 0em;
+  width: 3.8em;
+  height: 3.8em;
+}
+
+.svgicon.icon-features-layouts:before {
+  background-image: url(../images/animations.svg);
+  background-size: 4.2em 4.2em;
+  background-position: 0em 0em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.svgicon.icon-features-pin:before {
+  background-image: url(../images/pin.svg);
+  background-size: 4.0em 4.0em;
+  background-position: 0em 0em;
+  width: 4.0em;
+  height: 4.0em;
+}
+
+.svgicon.icon-features-night:before {
+  background-image: url(../images/night-mode.svg);
+  background-size: 4.2em 4.2em;
+  background-position: 0em 0em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.svgicon.icon-features-blacklist:before {
+  background-image: url(../images/block.svg);
+  background-size: 3.8em 3.8em;
+  background-position: 0em 0em;
+  width: 3.8em;
+  height: 3.8em;
+}
+
+.svgicon.icon-features-delayed:before {
+  background-image: url(../images/delayed-sending.svg);
+  background-size: 3.8em 3.8em;
+  background-position: 0em 0em;
+  width: 3.8em;
+  height: 3.8em;
+}
+
+.svgicon.icon-features-dual-sim:before {
+  background-image: url(../images/dual-sim.svg);
+  background-size: 3.4em 3.4em;
+  background-position: 0em 0em;
+  width: 3.4em;
+  height: 3.4em;
+}
+
+.svgicon.icon-features-backup:before {
+  background-image: url(../images/backup.svg);
+  background-size: 4.2em 4.2em;
+  background-position: 0em 0em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.svgicon.icon-features-encryption:before {
+  background-image: url(../images/encryption.svg);
+  background-size: 3.6em 3.6em;
+  background-position: 0em 0em;
+  width: 3.6em;
+  height: 3.6em;
+}
+
+.svgicon.icon-features-search:before {
+  background-image: url(../images/search.svg);
+  background-size: 3.8em 3.8em;
+  background-position: 0em 0em;
+  width: 3.8em;
+  height: 3.8em;
+}
+
+.svgicon.icon-features-mutes:before {
+  background-image: url(../images/snooze.svg);
+  background-size: 3.6em 3.6em;
+  background-position: 0em 0em;
+  width: 3.6em;
+  height: 3.6em;
+}
+
+.svgicon.icon-features-media:before {
+  background-image: url(../images/media-ready.svg);
+  background-size: 3.7em 3.7em;
+  background-position: 0em 0em;
+  width: 3.7em;
+  height: 3.7em;
+}
+
+.svgicon.icon-features-web-previews:before {
+  background-image: url(../images/web-link.svg);
+  background-size: 4.2em 4.2em;
+  background-position: 0em 0em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.svgicon.icon-features-schedule-messages:before {
+  background-image: url(../images/schedule-messages.svg);
+  background-size: 3.9em 3.9em;
+  background-position: 0em 0em;
+  width: 3.9em;
+  height: 3.9em;
+}

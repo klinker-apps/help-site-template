@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="25px" viewBox="0 0 87 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24" rx="12"></rect>
+        <rect id="path-3" x="0" y="0" width="26.1818182" height="26.1818182"></rect>
+        <rect id="path-5" x="0" y="0" width="26.1818182" height="26.1818182"></rect>
+        <rect id="path-7" x="0" y="0" width="26.1818182" height="26.1818182"></rect>
+        <rect id="path-9" x="0" y="0" width="24" height="24" rx="12"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(1.000000, 0.000000)">
+            <g id="icon.svgic_launcher" transform="translate(0.000000, 0.483871)">
+                <g id="mask">
+                    <g id="path-1-link" fill-rule="nonzero" fill="#000000">
+                        <rect id="path-1" x="0" y="0" width="24" height="24" rx="12"></rect>
+                    </g>
+                    <g id="path-1-link" fill="#FFFFFF">
+                        <rect id="path-1" x="0" y="0" width="24" height="24" rx="12"></rect>
+                    </g>
+                </g>
+                <g id="ic_launcher_background-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="ic_launcher_background" mask="url(#mask-2)">
+                        <g transform="translate(-1.090909, -1.090909)">
+                            <g id="dark-background" transform="translate(13.090909, 13.090909) scale(-1, 1) rotate(-180.000000) translate(-13.090909, -13.090909) ">
+                                <rect id="path-4" fill="#08776E" x="0" y="0" width="26.1818182" height="26.1818182"></rect>
+                            </g>
+                            <g id="light-background-Clipped">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="path-4"></g>
+                                <polygon id="light-background" fill="#009688" mask="url(#mask-4)" transform="translate(13.090909, 13.090909) scale(-1, 1) rotate(-180.000000) translate(-13.090909, -13.090909) " points="0 0 26.1818182 26.1818182 26.1818182 0"></polygon>
+                            </g>
+                            <g id="light-line-Clipped">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="path-4"></g>
+                                <polygon id="light-line" fill="#32AA9F" mask="url(#mask-6)" transform="translate(13.090909, 13.090909) scale(-1, 1) rotate(-180.000000) translate(-13.090909, -13.090909) " points="0 0 26.1818182 26.1818182 26.1818182 25.9431522 0.242605858 0"></polygon>
+                            </g>
+                            <g id="dark-line-Clipped">
+                                <mask id="mask-8" fill="white">
+                                    <use xlink:href="#path-7"></use>
+                                </mask>
+                                <g id="path-4"></g>
+                                <polygon id="dark-line" fill="#0B665E" mask="url(#mask-8)" transform="translate(13.090909, 13.090909) scale(-1, 1) rotate(-180.000000) translate(-13.090909, -13.090909) " points="0 0 26.1818182 26.1818182 25.9422571 26.1818182 0 0.241214471"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="ic_launcher_foreground-Clipped">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="ic_launcher_foreground" mask="url(#mask-10)">
+                        <g transform="translate(7.090909, 7.090909)" id="Group">
+                            <g>
+                                <polygon id="shadow" fill-opacity="0.1" fill="#000000" points="0.0964770115 9.809694 10.5548891 20.1818182 20.1818182 20.1818182 20.1818182 11.1328063 9.41285171 0.32146807 2.4179473 4.77431943"></polygon>
+                                <g id="message-bubble">
+                                    <g id="path-6-link" fill-rule="nonzero" fill="#000000">
+                                        <path d="M2.21022784,7.60937067 L9.17171716,7.60937067 C9.47296342,7.60937067 9.71717171,7.36516233 9.71717171,7.06391613 L9.71717171,7.06391613 L9.71717171,0.659875724 C9.71717171,0.358629496 9.47296342,0.114421178 9.17171716,0.114421178 L0.646464649,0.114421178 L0.646464649,0.114421178 C0.345218419,0.114421178 0.101010101,0.358629496 0.101010101,0.659875724 L0.101010101,0.659875724 L0.101010101,5.8293846 L0.101010101,9.73819265 L2.21022784,7.60937067 Z" id="path-6"></path>
+                                    </g>
+                                    <g id="path-6-link" fill="#FFFFFF">
+                                        <path d="M2.21022784,7.60937067 L9.17171716,7.60937067 C9.47296342,7.60937067 9.71717171,7.36516233 9.71717171,7.06391613 L9.71717171,7.06391613 L9.71717171,0.659875724 C9.71717171,0.358629496 9.47296342,0.114421178 9.17171716,0.114421178 L0.646464649,0.114421178 L0.646464649,0.114421178 C0.345218419,0.114421178 0.101010101,0.358629496 0.101010101,0.659875724 L0.101010101,0.659875724 L0.101010101,5.8293846 L0.101010101,9.73819265 L2.21022784,7.60937067 Z" id="path-6"></path>
+                                    </g>
+                                </g>
+                                <g id="lines" transform="translate(1.515152, 0.950535)" fill-rule="nonzero">
+                                    <rect id="bottom" fill-opacity="0.2" fill="#000000" x="0" y="4.189856" width="6.78787876" height="1.06060606"></rect>
+                                    <rect id="middle" fill-opacity="0.2" fill="#000000" x="0" y="2.39167694" width="6.78787876" height="1.06060606"></rect>
+                                    <rect id="top" fill-opacity="0.2" fill="#000000" x="0" y="0.579171218" width="6.78787876" height="1.06060606"></rect>
+                                    <polygon id="line-clip" fill="#FFFFFF" points="1.45784926 5.85982107 7.23850887 0.12357404 7.23850887 5.68327549"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-path" stroke-opacity="0.1" stroke="#FFFFFF" stroke-width="0.3" x="0.0818181818" y="0.0818181818" width="23.8363636" height="23.8363636" rx="11.9181818"></rect>
+            </g>
+            <text id="Talon" font-family="YuKyo-Bold, YuKyokasho" font-size="20" font-weight="bold" fill="#44485c">
+                <tspan x="35.55" y="20">Talon</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
