@@ -21,7 +21,7 @@ var faq = [{
           "Talon has the ability to watch for the official Twitter app's push notifications. When one of that app's notifications goes off, Talon will basically hijack it and replace it with it's own notification. This is probably the ideal solution for most users. To learn more about how it works and set it up, please see the <i>\"interceptor\"</i> topic, below." + brbr() +
 
           "<b>Conclusion</b>" + br() +
-          "Thanks for the read, if you made it all the way, hope that gives you an idea as to why push notifications just aren't even an option at this point and what my solution to that problem has been, even if it is not ideal. It works, and it seems to be working quite well for me." + brbr() +
+          "Thanks for the read, if you made it all the way, hope that gives you an idea as to why push notifications just aren't even an option at this point and what my solution to that problem has been, even if it is not ideal. It works, and it seems to be working quite well for me."
   }, {
     keywords: "push notifications twitter app interceptor",
     title: "What is the Twitter push notification interceptor and how does it work?",
