@@ -11,25 +11,17 @@ var faq = [{
   }, {
     keywords: "push notifications push-notifications",
     title: "Can Talon receive push notifications?",
-    text: "Push notifications will not be coming to Talon unless something changes with the Twitter APIs. I have created <i>Talon Pull</i> which is simply an always on, listening/streaming service that will receive new tweets from Twitter whenever your Twitter handle is included." + brbr() +
+    text: "Push notifications will not be possible in Talon (or any other third party Twitter) unless something changes with the Twitter APIs." + brbr() +
           "<b>Reasons</b>" + br() +
           "This will be the more technical part of this post, if you don't want to read and understand it, then you will have to just accept my answer from above. If you don't accept that I know what I am talking about... Then by all means, read on, I will try to keep it as simple as possible." + brbr() +
           "To access Twitter, they have provided us with the REST APIs (currently version 1.1). These APIs allow developers to communicate with Twitter in real time by just submitting requests to get data from the network. They make it relatively simple - if you know what your doing - to obtain the data that they allow you to get and store, but there are plenty of limitations to these APIs, which make sense: Twitter is a completely free service and make their money off of advertisements. They want people to use their official Twitter products (such as the web or their own Android app) to access their services because they are able to place advertisements in them and that is the only way they make money. So they just aren't going to make some things available for 3rd party developers." + brbr() +
-          "One of those things is their push notification system. As I said before, they allow us to access their services with these REST APIs, but they also have a Streaming API available so that a 3rd party service, such as this one, could be always connected. Sounds great right? Maybe, maybe not. On Lollipop+, this takes up a massive amount of battery, and usage will not be able to be reduced." + brbr() +
-          "What these streaming APIs should be used for is a server side interaction that would then connect to GCM (Google Cloud Messaging) and send push notifications from there. I would love to say I am working on something like this, but it isn't possible for developers at this time. Twitter has shut down access to the Site Stream API that would be required for something like this. Until they open it once again to the public, Talon will not be able to use any kind of push notification." + brbr() +
-          "That leaves only one thing to do: wait. Maybe Twitter will open up some kind of push notification service to it's developers, but I wouldn't count on that. The ideal thing for them to do would be to set up their own GCM server for us to communicate with, but I don't see that as being likely at all because of the advertising. That would take away one of the main draws for their app, leaving it with almost nothing that 3rd party developers can't do." + brbr() +
+          "One of those things is their push notification system. As I said before, they allow us to access their services with these REST APIs, but they also had a Streaming API available so that a 3rd party service, such as this one, could be always connected. Sounds great right? Unfortunately, Twitter shut these streaming services down. No apps can access them any longer." + brbr() +
 
           "<b>Twitter Push Notification Interceptor</b>" + br() +
           "Talon has the ability to watch for the official Twitter app's push notifications. When one of that app's notifications goes off, Talon will basically hijack it and replace it with it's own notification. This is probably the ideal solution for most users. To learn more about how it works and set it up, please see the <i>\"interceptor\"</i> topic, below." + brbr() +
 
-          "<b>Talon Pull - My other solution/workaround</b>" + br() +
-          "As I said before, this is NOT push notifications. Push notifications are sent to your device to notify you from some kind of server. They aren't always on, and only turn on when your device receives the info from the web service." + brbr() +
-          "Talon Pull on the other hand, uses Twitter's Streaming API to just create an <i>always on</i> service to be constantly listening for and streaming tweets that contain your Twitter Handle. The way this works is that you are signed in with your API keys after you turn on the option to enable Talon Pull. I then just create this listener that Twitter's servers will send new tweets to. Luckily, they will take care of most of the filtering of those tweets on their end, to reduce the load as much as possible on your device (because before the filtering, it literally will receive every single public tweet that is happening. It was amazing when I first flipped and saw the tweets flowing over my log haha). So we filter it down to as few of tweets actually reaching your device as possible, then I start broadcasting the notifications when you receive the new ones." + brbr() +
-          "Overall, it is a relatively simple process, the problem with it though, you have probably already realized, you have to be constantly connected with a data service or the app won't know when to receive the new tweets. Obviously that is the part that is going to end up taking the battery." + brbr() +
-
           "<b>Conclusion</b>" + br() +
           "Thanks for the read, if you made it all the way, hope that gives you an idea as to why push notifications just aren't even an option at this point and what my solution to that problem has been, even if it is not ideal. It works, and it seems to be working quite well for me." + brbr() +
-          "So just know: <i>Talon Pull</i> isn't quite the same as push notifications, but it is as close as possible at this time. Enjoy!"
   }, {
     keywords: "push notifications twitter app interceptor",
     title: "What is the Twitter push notification interceptor and how does it work?",
@@ -203,12 +195,10 @@ var faq = [{
           "This page is simple and works very similar to the other pages on your timeline. It is a manual refresh (or background refresh - if you prefer). When it updates, it will display the information it has downloaded." + brbr() +
 
           "<b>What it isn't</b>" + br() +
-          "This is not Talon Pull. It will not provide you with instant notifications for your interactions and it does not replace Talon Pull in that regard. This page has nothing to do with <i>streaming</i> which is the method that Talon Pull uses to catch those interactions." + brbr() +
+          "This is not streaming or push notifications. It will not provide you with instant notifications for your interactions - this page has nothing to do with <i>streaming</i> or real time interaction. Real time interactions are no longer possible because of the topics discussed in the <i>push notifications</i> topic." + brbr() +
 
           "Why should you use it?" + br() +
-          "If you use Talon Pull and are happy with how that works, then there is really no reason to use this page. They are alternatives to each other. This, in no way, replaces Talon Pull. The activity page should be used if you are interested in this interaction information but you do not care about getting up-to-the-second notifications." + brbr() +
-          "There are of course advantages to this page over Talon Pull's streaming method as well. The foremost being battery and data saving." + brbr() +
-          "So pick the method you want and works best for you. On Lollipop, the battery effects of Talon Pull are unbearable, whereas they aren't nearly as severe on KitKat and below.﻿" + brbr() +
+          "The activity page should be used if you are interested in this interaction information but you do not care about getting up-to-the-second notifications." + brbr() +
 
           "<b>What if it isn't working?</b>" + br() +
           "Some of what goes into the activity page depends on pieces outside if Twitter's API. I know some people have issues with it, unfortunately I don't think they will be fixed until Twitter opens things up more. The main issues will come for user's with protected accounts, or users that produce a high volume of tweets."
@@ -235,7 +225,6 @@ var faq = [{
     text: "If you use Talon a lot throughout the day, it is going to take up battery and mobile data, simple as that. I find that on a 30 min refresh interval for the different timelines and manually going in and browsing/updating throughout the day, it takes about 4-5% of my battery." + brbr() +
           "If that isn't acceptable for you though, then there are a few things you can do to reduce battery consumption:" +
           "<ol>" +
-            "<li>Turn off <i>Talon Pull</i> and <i>Live Streaming</i></li>" +
             "<li>Don't use the <i>Pre-cache Images</i> option under <i>Sync Settings</i></li>" +
             "<li>Turn down the refresh interval on the timelines. This is the big one. It is those background services that are going to drain your battery, because they are going to cause <i>Wake Locks</i>.</li>" +
             "<li>Turn off <i>Refresh on Startup</i></li>" +
