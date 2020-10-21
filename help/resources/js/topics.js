@@ -237,8 +237,8 @@ var faq = [{
     text: "If anyone is interested, the translations for Talon are all open to contributors. To translate, we have been using OneSky." + brbr() +
           "You will notice two different projects for Talon on the site. One of them is the original/classic version's strings. The other is the strings for the newer material design version of the app. Since I am still managing and supporting both versions, it made sense for me to make separate projects." + brbr() +
           "No strings are duplicated. If you translate the string in the classic version, it will still be brought into the new version as well." + brbr() +
-          "So, here is the link to the original, <i>Classic</i> version's strings: " + link("link", "http://oshynev.oneskyapp.com/admin/project/dashboard/project/7755") + brbr() +
-          "and here is a link to the new strings that were added in the Lollipop version: " + link("link", "http://oshynev.oneskyapp.com/admin/project/dashboard/project/15080") + brbr() +
+          "So, here is the link to the original, <i>Classic</i> version's strings: " + link("link", "https://klinker-apps-inc.oneskyapp.com/admin/project/dashboard/project/174320") + brbr() +
+          "and here is a link to the new strings that were added in the Lollipop version: " + link("link", "https://klinker-apps-inc.oneskyapp.com/admin/project/dashboard/project/174322") + brbr() +
           "If anyone wants to help out, that would be great, thanks and enjoy the app!"
   }, {
     keywords: "contact email feature-request bug-report",
@@ -248,7 +248,6 @@ var faq = [{
             "<li><a href=\"mailto:luke@klinkerapps.com?Subject=Pulse\">Email</a></li>" +
             "<li><a href=\"https://twitter.com/KlinkerApps\" target=\"_blank\">Twitter</a></li>" +
             "<li><a href=\"https://twitter.com/lukeklinker\" target=\"_blank\">Luke's Twitter</a></li>" +
-            "<li><a href=\"https://plus.google.com/communities/112468199526946242218\" target=\"_blank\">Google+ Community</a></li>" +
           "</ul>"
   }]
 }]
